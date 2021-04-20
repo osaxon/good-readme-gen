@@ -20,17 +20,34 @@ const questions = [{
 },
 ];
 
+
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => console.log("File created"))
+}
+
+function createFile(data) {
+    let title = `#${data.title}`;
+    let desc = `## Description\n${data.desc}`;
+    const fileData = [];
+
+    fileData.push(title);
+    fileData.push(desc);
+
+    const fileDataString = fileData.join('\n');
+
+    writeToFile("README.md", fileDataString);
 }
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer
     .prompt(questions)
-    .then((response) =>
-    writeToFile("README.md", JSON.stringify(response)))
+    .then((response) => {
+        createFile(response);
+    })
+    console.log("File created")
 }
 
 // Function call to initialize app
