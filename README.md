@@ -1,17 +1,18 @@
-# Good ReadMe Generator
+# project
 
   
 ## Description
-This application will create a readme in markdown format following best practice guidelines.
+desc
 
   
 ## Installation Instructions
-Run from the terminal
+ddj
 
   
 ## Project Contributors
-Oliver Saxon
+dld
 
   
 ## Licence
-B/n
+[![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+
