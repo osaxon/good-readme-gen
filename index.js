@@ -27,9 +27,9 @@ const questions = [{
 },
 {
     type: 'list',
-    message: 'Licence',
-    choices: ["A", "B", "C"],
-    name: 'licence',
+    message: 'License',
+    choices: ["Creative Commons", "GNU GPL v3", "IBM", "ISC", "MIT"],
+    name: 'license',
 
 }
 ];
