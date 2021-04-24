@@ -9,6 +9,9 @@ const questions = [{
     type: 'input',
     message: 'Enter the title of your project',
     name: 'title',
+    default: function(){
+        return "Project Title";
+    }
 },
 {
     type: 'input',
@@ -27,11 +30,23 @@ const questions = [{
 },
 {
     type: 'list',
-    message: 'License',
+    message: 'Select the license under which this project is covered',
     choices: ["Creative Commons", "GNU GPL v3", "IBM", "ISC", "MIT"],
     name: 'license',
 
-}
+},
+{
+    type: 'input',
+    message: 'Enter your GitHub username',
+    name: 'github',
+
+},
+{
+    type: 'input',
+    message: 'Enter your email address',
+    name: 'email',
+
+},
 ];
 
 

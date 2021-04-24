@@ -97,14 +97,23 @@ function generateMarkdown(data) {
   const title = `# ${data.title}`;
   const desc = `## Description\n${data.desc}`;
   const install = `## Installation Instructions\n${data.install}`;
-  const contributors = `## Credits\n${data.contributors}`;
-  const licence = `## Licence\n${renderLicenseBadge(data.license)}\n${renderLicenseSection(data.license)}`;
+  const contributors = `## Contributors\n${data.contributors}`;
+  const license = `## License\n${renderLicenseBadge(data.license)}\n${renderLicenseSection(data.license)}`;
+  const github = `https://github.com/${data.github}`;
+  const email = `[${data.email}](${data.email})`;
 
-  return `# ${data.title}\n
+  return `${renderLicenseBadge(data.license)}\n# ${data.title}\n
   \n${desc}\n
+  \n## Table of Contents\n
+  **[Installation Instructions](#intallation-instructions)**<br>
+  **[Controbutors](#contributors)**<br>
+  **[License Information](#license)**<br>
   \n${install}\n
   \n${contributors}\n
-  \n${licence}\n
+  \n${license}\n
+  \n# Questions\n
+  Visit my GitHub page [here](${github}).\n
+  Email me with questions at ${email}.\n
 `;
 }
 
