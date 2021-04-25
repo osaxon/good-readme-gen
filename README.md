@@ -3,10 +3,12 @@
 
   
 ## Description
-This command line application creates a readme template which follows best practice guidelines.
+This command line application creates a readme template which follows best practice guidelines using:
+
+A video demo of the app can be viewed [here](https://www.youtube.com/watch?v=TagMsN7HLlw&ab_channel=OliverSaxon)
 
   
-#Table of Contents
+# Table of Contents
 
   **[Installation Instructions](#intallation-instructions)**<br>
   **[Controbutors](#contributors)**<br>
